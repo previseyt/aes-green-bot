@@ -9,7 +9,8 @@
 // Dependencies: discord.js, dotenv, nanoid
 // npm i discord.js dotenv nanoid
 
-import from "discord.js";
+import { Client, GatewayIntentBits } from "discord.js";
+
 const { Client, GatewayIntentBits } = pkg;
 
 const fs = require("fs");
