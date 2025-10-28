@@ -28,7 +28,6 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-import { nanoid } from "nanoid";
 const {
   Client,
   GatewayIntentBits,
