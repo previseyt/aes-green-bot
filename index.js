@@ -9,13 +9,25 @@
 // Dependencies: discord.js, dotenv, nanoid
 // npm i discord.js dotenv nanoid
 
-import { Client, GatewayIntentBits } from "discord.js";
+import fs from "fs";
+import path from "path";
+import dotenv from "dotenv";
+import { nanoid } from "nanoid";
+import {
+  Client,
+  GatewayIntentBits,
+  Partials,
+  EmbedBuilder,
+  ActivityType,
+  PermissionsBitField
+} from "discord.js";
+import { fileURLToPath } from "url";
 
-const { Client, GatewayIntentBits } = pkg;
+dotenv.config();
 
-const fs = require("fs");
-const path = require("path");
-require("dotenv").config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 import { nanoid } from "nanoid";
 const {
   Client,
