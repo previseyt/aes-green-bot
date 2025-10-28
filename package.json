@@ -1,15 +1,13 @@
 {
   "name": "aes-green-bot",
   "version": "1.0.0",
-  "description": "Bot AES pastel vert avec les fonctions de Mimu, Baobun et Draftbot",
-  "type": "module",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "discord.js": "^14.15.3",
-    "mongoose": "^8.4.2",
     "dotenv": "^16.4.5"
   }
 }
